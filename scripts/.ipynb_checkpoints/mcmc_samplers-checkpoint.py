@@ -1,6 +1,8 @@
 import torch
 import numpy as np
-
+import torch.nn as nn
+import random
+import itertools
 ## Base Sampler class
 ## -----------------------------------------------------------------------------
 
@@ -198,10 +200,6 @@ class SGHMCSampler(_BaseSampler):
 				if len(self.sampled_weights) % n_samples_per_chain == 0:
 					self.loss_module.initialise()
 					
-
-import torch.nn as nn
-import random
-import itertools
 
 class LossModule(nn.Module):
 	def __init__(self, model,train, loss, temperature, scaling = None, non_curated = 0, corruptFunction = None, log_softmax = False):
