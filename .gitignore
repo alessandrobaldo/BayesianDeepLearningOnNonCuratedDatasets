@@ -1,3 +1,10 @@
 *.ipynb_checkpoints
 __pycache__/
 .ipynb_checkpoints
+dataSimple/__pycache__
+dataSimple/.ipynb_checkpoints
+dataUCI/.ipynb_checkpoints
+./.ipynb_checkpoints
+./__pycache__
+*/__pycache__
+*/.ipynb_checkpoints
