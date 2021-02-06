@@ -1,0 +1,8 @@
+# Bayesian Deep Learning On Non Curated Datasets
+Bayesian Neural Networks represent a different approach to deep learning, promising a robust tun- ing of the model’s parameters, treating the entire problem as Bayesian inference and taking into account the true posterior distribution of such parameters with respect to data. These techniques are often supported by sampling methods, as a framework for the update of weights and biases. In this paper, these methods are used to measure the impact of scaling the true posterior distributions. The experiments will be held over datasets characterized by different levels of curation.
+
+## Description
+Starting from a recent debate in the Bayesian community, the project explores the <strong>Cold</strong> and <strong>Temepred</strong> versions of posterior distributions, after that in some experimental campaigns resulted to give promisingly a boost of performances in very deep models.
+
+The experiments reported in this repository firstly explored the potentialities of some well-noted sampling methods as Metropolis, Metropolis-Hastings and MCMC algorithms on very basic deep learning models, to then enlarge the spectrum to a standard image classification task on CIFAR-10, by means of ResNet-20. Here, the major relevant improvements of temperature scaling are shown, however denoting some instabilities and inconsistenties too.
+The project then aimed at addressing the problem to non-curted versions of the dataset, trying to potentially discover some weaknesses of the adaptation of posterior distributions and highlighting the major differences between Cold and Tempered scalings.
